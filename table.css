@@ -1,0 +1,98 @@
+
+/* -- Box model ---- */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* -- Body style ---*/
+html, body {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+}
+
+html {
+  position: relative;
+  overflow-x: hidden;
+  margin: 16px;
+  padding: 0;
+  min-height: 100%;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue, Helvetica, Arial', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.01rem;
+  color: #212121;
+  background-color: #f5f5f5;
+
+  // Font Rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+#cm-demo {
+  margin: 20px auto;
+  max-width: 960px;
+}
+.cm-button{
+  font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue, Helvetica, Arial', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #fff;
+  background: #478CA4;
+  padding: 7px 10px;
+  border-radius: 2px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.13);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.cm-button:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* -- CSS Color Hover ---*/
+
+@media screen and (max-width: 767px) {
+    .table-responsive-vertical .table-striped.table-mc-blue > tbody > tr > td,
+    .table-responsive-vertical .table-striped.table-mc-blue > tbody > tr:nth-child(odd) {
+        background-color: @table-bg;
+    }
+    .table-responsive-vertical .table-striped.table-mc-blue > tbody > tr > td:nth-child(odd) {
+        background-color: #e7e9fd;
+    }
+    .table-responsive-vertical .table-hover.table-mc-blue > tbody > tr:hover > td,
+    .table-responsive-vertical .table-hover.table-mc-blue > tbody > tr:hover {
+        background-color: @table-bg;
+    }
+    .table-responsive-vertical .table-hover.table-mc-blue > tbody > tr > td:hover {
+        background-color: #d0d9ff;
+    }
+}
+.table-striped.table-mc-light-blue > tbody > tr:nth-child(odd) > td,
+.table-striped.table-mc-light-blue > tbody > tr:nth-child(odd) > th {
+    background-color: #e1f5fe;
+}
+.table-hover.table-mc-light-blue > tbody > tr:hover > td,
+.table-hover.table-mc-light-blue > tbody > tr:hover > th {
+    background-color: #b3e5fc;
+}
+
+
+
+
+
+
+
